@@ -1,19 +1,17 @@
 ********************************************************************************
-#Using REDCap API from Stata
+# Using REDCap API from Stata
 
 Luke Stevens, Murdoch Childrens Research Institute https://www.mcri.edu.au
 20-Jun-2017
-********************************************************************************
 
 ********************************************************************************
-##Acknowledgement
+## Acknowledgement
 Thanks to Mark Oium, Medical College of Wisconsin, Milwaukee, WI, for example 
 of Stata shell command and curl to exchange data with REDCap via the API:
 https://community.projectredcap.org/articles/462/api-examples.html (not public)
-********************************************************************************
 
 ********************************************************************************
-##Background
+## Background
 
 API is an acronym of "Application Programming Interface", which in English 
 translates as a mechanism via which you may interact with a system (in this case
@@ -23,14 +21,14 @@ The Stata do-files included here give examples of how you can utilise the REDCap
 API to interact with a REDCap project from within Stata without having to log on
 to REDCap via your browser in order to download or upload data and/or metadata.
   
-###API Documentation
+### API Documentation
 The documentation lists the "API methods" ("functions", if you like) that are 
 available and how you can use them.
 
 The REDCap API documentation is available from within the REDCap web application
 at https://redcap-url.your-institution.edu/api/help/
 
-###How Might the REDCap API be Useful?  
+### How Might the REDCap API be Useful?  
 Logging on to REDCap and downloading data for further processing is a common
 task, whether for obtaining raw data for cleaning and analysis purposes, for
 preparing summary reports or CONSORT diagrams, or even for just taking a quick
@@ -43,23 +41,22 @@ manner. #reproducibleresearch
 Note that using the API will not completely replace the browser interface. You
 may still wish to download REDCap's regular Stata do-files that contain 
 labelling commands, for example.
-********************************************************************************
 
 ********************************************************************************
-##Preparation
+## Preparation
 
 Before you can follow the example do-files you need a REDCap project to access,
 an "API token", which functions as your username and password (keep it secret!)
 and also a copy of curl, the program that will enable you to communicate 
 programmatically with your REDCap server.
 
-###Example Project
+### Example Project
 You will need access to an instance of REDCap within which you can create new
 projects. Download the project XML file provided in this repository and upload
 it on REDCap's "Create New Project" page. You now have a new project you can 
 use as you like for practice with the REDCap API.
 
-###API Token
+### API Token
 You must never write down your REDCap password, and this prohibition extends to
 including passwords within program scripts (e.g. a do-file). In order to avoid
 having to record passwords this way it is common for APIs to authenticate users
@@ -88,7 +85,7 @@ others*.
 If you think your token has been compromised, contact your REDCap administrator
 immediately AND either delete or regenerate your token.
 
-###API Playground 
+### API Playground 
 REDCap provides the "API Playground" as an area where you can experiment with
 the different API methods and parameter options, It enables you to execute 
 requests and view corresponding responses, and also generates boilerplate 
@@ -102,7 +99,7 @@ processes the request and returns an appropriate response. This is because the
 interaction is performed using the same mechanism: the HTTP protocol (with an 
 encrypted connection, hence HTTPS).
 
-###curl
+### curl
 Stata does not have inbuilt functionality for performing http requests (note 
 you can load a .dta from an http url via `webuse`, but it does not work using 
 https) but does offer the `shell` command, which enables you to pass data to 
@@ -110,7 +107,7 @@ other programms on your computer. We can use the popular command-line tool curl
 to perform the communication with the REDCap server.
 
 Download a version of curl that is appropriate to your device and operating
-system: https://curl.haxx.se
+system: [https://curl.haxx.se](https://curl.haxx.se)
 
 It does not matter where on your system you copy the curl executable file 
 (especially if you include the location in your PATH environment variable) but
@@ -118,7 +115,7 @@ for the purposes of the following exercises it is assumed that you have the
 executable at: c:\curl\curl.exe
 
 ********************************************************************************
-##Do-Files
+## Do-Files
 
 The following do-files are provided to illustrate different ways the REDCap API
 may be used, and different ways in which an appropriate do-file may be 
