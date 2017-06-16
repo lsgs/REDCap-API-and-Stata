@@ -121,28 +121,28 @@ The following do-files are provided to illustrate different ways the REDCap API
 may be used, and different ways in which an appropriate do-file may be 
 constructed.
 
-1_Simple_Export.do 
-A basic API call to download all data from your REDCap project.
+1. Simple_Export.do
+    - A basic API call to download all data from your REDCap project.
    
-2_Export_Fields_Instruments.do 
-Specify specific fields and instruments to download.
+2. Export_Fields_Instruments.do
+    - Specify specific fields and instruments to download.
    
-3_Export_Filter.do
-Specify an expression that will filter the records downloaded.
+3. Export_Filter.do
+    - Specify an expression that will filter the records downloaded.
    
-4_Export_Report.do
-Specify a REDCap report to download.
+4. Export_Report.do
+    - Specify a REDCap report to download.
    
-5_Export_Metadata.do
-Illustrating metadata (data dictionary) download - not just records.
+5. Export_Metadata.do
+    - Illustrating metadata (data dictionary) download - not just records.
    
-6_Import_Records.do
-Illustrating data import - API is not just for export.
+6. Import_Records.do 
+    - Illustrating data import - API is not just for export.
 
-7_Build_Command_String.do
-An example of building the curl command programmatically.
+7. Build_Command_String.do 
+    - An example of building the curl command programmatically.
    
-8_Debugging.do
-How to troubleshoot an API call that fails.
+8. Debugging.do 
+    - How to troubleshoot an API call that fails.
    
 ********************************************************************************
