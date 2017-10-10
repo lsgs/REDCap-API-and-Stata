@@ -107,7 +107,7 @@ other programms on your computer. We can use the popular command-line tool curl
 to perform the communication with the REDCap server.
 
 Download a version of curl that is appropriate to your device and operating
-system: [https://curl.haxx.se](https://curl.haxx.se)
+system: [https://curl.haxx.se](https://curl.haxx.se) [http://macappstore.org/curl/](http://macappstore.org/curl/)
 
 It does not matter where on your system you copy the curl executable file 
 (especially if you include the location in your PATH environment variable) but
