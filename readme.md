@@ -145,4 +145,7 @@ constructed.
 8. Debugging.do 
     - How to troubleshoot an API call that fails.
    
+9. Delete_Records.do 
+    - An example of deleting multiple records.
+   
 ********************************************************************************
