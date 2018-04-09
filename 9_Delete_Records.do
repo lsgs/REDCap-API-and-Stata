@@ -16,8 +16,7 @@ local curlpath="c:\curl\curl.exe"
 local apiurl="https://redcap.mcri.edu.au/api/"
 local tempfile "tempdata.csv"
 
-//local token "<insert your token here>"
-local token "88C320A516880FFE10765D770AACC401" //pid9 Sandbox
+local token "<insert your token here>"
 
 *_______________________________________________________________________________
 * first generate and import a few records that we can afterwards delete
