@@ -148,4 +148,7 @@ constructed.
 9. Delete_Records.do 
     - An example of deleting multiple records.
    
+10. Read_Token_From_File.do 
+    - An example of reading in your API token from an external (and private) file.
+   
 ********************************************************************************
