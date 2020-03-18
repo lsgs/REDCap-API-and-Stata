@@ -150,5 +150,11 @@ constructed.
    
 10. Read_Token_From_File.do 
     - An example of reading in your API token from an external (and private) file.
-   
+      
+11. get_redcap_metadata.ado 
+    - An ado-file (program) for downloading data dictionary information and applying metadata to raw datasets.
+    - Save to your ado directory and pass the API URL and token as arguments when you call it:
+    - ``get_redcap_metadata "`apiurl'" "`apitoken'"``
+ 
+
 ********************************************************************************
