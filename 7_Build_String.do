@@ -69,9 +69,7 @@ foreach listentry in ///
 	local i=`i'+1
 }
 
-local cmd="`curlpath' --output `outfile' --data "+char(34)+"`data'"+char(34)+" `apiurl'"
-
-shell `cmd'
+shell curl --output "`outfile'" --data "`data'" "`apiurl'"
 
 import delimited using `outfile', varnames(1) clear
 br
