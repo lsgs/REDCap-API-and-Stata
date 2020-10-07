@@ -117,9 +117,7 @@ executable at: c:\curl\curl.exe
 ********************************************************************************
 ## Do-Files
 
-The following do-files are provided to illustrate different ways the REDCap API
-may be used, and different ways in which an appropriate do-file may be 
-constructed.
+The following do-files are provided to illustrate different ways the REDCap API may be used, and different ways in which an appropriate do-file may be constructed.
 
 1. Simple_Export.do
     - A basic API call to download all data from your REDCap project.
@@ -155,6 +153,4 @@ constructed.
     - An ado-file (program) for downloading data dictionary information and applying metadata to raw datasets.
     - Save to your ado directory and pass the API URL and token as arguments when you call it:
     - ``get_redcap_metadata "`apiurl'" "`apitoken'"``
- 
-
 ********************************************************************************

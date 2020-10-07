@@ -2,7 +2,7 @@
 Download a dataset using the REDCap API
 Download metadata for the variables and apply labels etc.
 
-Note the following field types cannot be labelled:
+Note the following field types cannot have their values labelled because the label information is not incuded in the data dictionary:
 - redcap_data_access_group
 - text fields utilising the Bioportal ontology lookup
 - dynamic sql
@@ -36,7 +36,7 @@ program get_redcap_metadata
 		shell curl --output "`tempcsv'" --data "`data'" "`apiurl'"
 
 		capture frame drop redcapmetadata
-		frame redcapmetadata: import delimited `tempcsv', bindquotes(strict)
+		frame redcapmetadata: import delimited `tempcsv', bindquotes(strict) maxquotedrows(unlimited) stringcols(_all)
 		erase `tempcsv'
 
 		capture confirm variable field_name
