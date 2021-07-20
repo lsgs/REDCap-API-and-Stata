@@ -153,4 +153,8 @@ The following do-files are provided to illustrate different ways the REDCap API 
     - An ado-file (program) for downloading data dictionary information and applying metadata to raw datasets.
     - Save to your ado directory and pass the API URL and token as arguments when you call it:
     - ``get_redcap_metadata "`apiurl'" "`apitoken'"``
+	
+12. 12_File_Export_Import.do
+    - Looping through records to export a file from one project and import it to the corresponding record in another.
+	
 ********************************************************************************
