@@ -157,4 +157,8 @@ The following do-files are provided to illustrate different ways the REDCap API 
 12. 12_File_Export_Import.do
     - Looping through records to export a file from one project and import it to the corresponding record in another.
 	
+13. 13_metadatacsv.ado
+    - Run on any dataset to generate a csv data dictionary with variable names, variable labels, data types, and choice values/labels.
+    - Easily convert into a REDCap project data dictionary.
+	
 ********************************************************************************
